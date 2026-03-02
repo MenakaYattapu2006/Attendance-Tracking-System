@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Food Tracking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="indexSection">
+    <h1>ADITYA UNIVERSITY</h1>
+    <h2>Upload Student List</h2>
+    <input type="file" id="upload" accept=".csv" />
+    <button id="proceedBtn" disabled>Next</button>
+  </div>
+
+  <div class="container" id="scanSection" style="display:none;">
+    <h1>Scan or Enter Student ID</h1>
+    <input type="text" id="scanInput" placeholder="Scan ID or Enter Name" />
+    <button onclick="markAttendance()">Mark Attendance</button>
+    <p id="message"></p>
+    <button onclick="showReportSection()">Next</button>
+  </div>
+
+  <div class="container" id="reportSection" style="display:none;">
+    <h1>Download Report</h1>
+    <button onclick="downloadReport()">Download CSV Report</button>
+    <table id="reportTable">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Status</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

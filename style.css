@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Makes sure the background image covers the full screen */
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white background for readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #16a085;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  input[type="file"],
+  input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f7f9fb;
+  }
+  
+  input[type="file"]:focus,
+  input[type="text"]:focus {
+    background-color: #eaf1f2;
+    border-color: #3498db;
+  }
+  
+  button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    background-color: #2980b9;
+    transform: translateY(1px);
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #16a085;
+    font-size: 1.2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #f7f9fb;
+  }
+  
+  td:hover {
+    background-color: #eaf1f2;
+  }
+  
+  #reportTable tbody tr:nth-child(even) {
+    background-color: #f2f7fb;
+  }
+  
+  #reportTable tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  #reportTable tbody tr:hover {
+    background-color: #eaf1f2;
+  }
+  
